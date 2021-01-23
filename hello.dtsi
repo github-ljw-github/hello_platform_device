@@ -1,0 +1,12 @@
+// SPDX-License-Identifier: GPL-2.0-only
+/*
+ * Copyright (C) 2020 Hello Incorporated - http://www.hello.com/
+ */
+
+/ {
+	hello@12345678{
+		compatible = "hello";
+		reg = <0x12340000 0x1000>, //platform_get_resource(pdev, IORESOURCE_MEM, 0)
+		      <0x45670000 0x2000>; //platform_get_resource(pdev, IORESOURCE_MEM, 1)
+	};
+};
